@@ -7,10 +7,11 @@ import InteractionPlugin from '@fullcalendar/interaction'
 import listPlugin from '@fullcalendar/list'
 import { Box, List, ListItem, Typography, useTheme } from '@mui/materials'
 import Header from '../../components/Header'
-import { token } from '../../theme'
+import { tokens } from '../../theme'
 
 const Calendar = () => {
-  return <div>index</div>
+  const theme = useTheme()
+  const colors = tokens(theme.Palette.mode)
 }
 
-export default index
+export default Calendar
